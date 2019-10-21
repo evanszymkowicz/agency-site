@@ -1,0 +1,280 @@
+.Company_Intro {
+  width: 100%;
+  margin: 120px 0 100px; }
+
+.Company_Intro-Wrap {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between; }
+
+.Company_Intro-Header {
+  width: 60%;
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: -3px;
+  opacity: 0;
+  transition: all 0.4s ease-in; }
+
+.Company_Intro-Right {
+  width: 40%;
+  padding-left: 20px;
+  margin-top: 120px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 46px;
+  opacity: 0;
+  color: #898989;
+  transition: all 0.4s ease-in; }
+
+@media screen and (max-height: 700px) {
+  .Company_Intro {
+    margin-top: 80px; }
+  .Company_Intro-Header {
+    font-size: 60px; } }
+
+@media screen and (max-height: 600px) {
+  .Company_Intro {
+    margin-top: 60px; } }
+
+@media screen and (max-width: 1600px) {
+  .Company_Intro-Right {
+    font-size: 18px;
+    line-height: 38px; } }
+
+@media screen and (max-width: 1100px) {
+  .Company_Intro-Wrap {
+    display: block; }
+  .Company_Intro-Header {
+    margin-bottom: 40px;
+    width: 100%; }
+  .Company_Intro-Right {
+    margin-top: 0;
+    font-size: 28px;
+    width: 100%;
+    padding: 0; } }
+
+@media screen and (max-width: 900px) {
+  .Company_Intro-Header {
+    font-size: 50px; }
+  .Company_Intro-Right {
+    font-size: 20px; } }
+
+@media screen and (max-width: 600px) {
+  .Company_Intro {
+    margin-top: 60px; }
+  .Company_Intro-Header {
+    font-size: 40px; }
+  .Company_Intro-Right {
+    font-size: 16px;
+    line-height: 40px; } }
+
+.Company_Images {
+  width: 100%;
+  margin-bottom: 100px; }
+
+.Company_Images-Wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.Company_Images-Left {
+  width: 49%; }
+
+.Company_Images-Right {
+  width: 49%; }
+
+.Company_Images-Image {
+  width: 100%;
+  box-shadow: 5px 5px 30px #1414142c;
+  opacity: 0; }
+
+.Company-Image1 {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+@media screen and (max-width: 900px) {
+  .Company_Images-Wrap {
+    flex-direction: column;
+    align-items: center; }
+  .Company_Images-Right {
+    width: 80%; }
+  .Company_Images-Left {
+    width: 80%;
+    margin-bottom: 10px; }
+  .Company-Image1 {
+    margin: 0 0 10px;
+    width: 100%; }
+  .Company-Image2 {
+    width: 100%; } }
+
+@media screen and (max-width: 700px) {
+  .Company_Images-Right {
+    width: 100%; }
+  .Company_Images-Left {
+    width: 100%; } }
+
+.Company_Cores {
+  width: 100%;
+  margin-top: 250px;
+  margin-bottom: 80px; }
+
+.Company_Cores-Wrap {
+  width: 100%;
+  position: relative; }
+
+.Company_Cores-Main {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.Company_Cores-Main-NumberWrap {
+  width: 20%; }
+
+.Company_Cores-Main-Number {
+  position: absolute;
+  font-size: 100px;
+  transition: all 0.4s ease-in; }
+
+.Company_Number2 {
+  opacity: 0; }
+
+.Company_Number3 {
+  opacity: 0; }
+
+.Company_Cores-Main-Sections-Wrap {
+  width: 80%; }
+
+.Company_Cores-Main-Section {
+  width: 100%;
+  position: relative;
+  margin-bottom: 180px; }
+
+.Company_Cores-Main-Section:last-child {
+  margin-bottom: 0; }
+
+.Company_Cores-Main-Section-Title {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  transition: all 0.4s ease-in; }
+
+.Company_Cores-Main-Section-SubTitle {
+  font-size: 24px;
+  line-height: 42px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #393939;
+  transition: all 0.4s ease-in; }
+
+.Company_Cores-Main-Section-Text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 46px;
+  color: #898989;
+  transition: all 0.4s ease-in; }
+
+.Company_Cores-Mobile {
+  width: 100%;
+  display: none; }
+
+.Company_Cores-Mobile-NumberWrap {
+  margin-bottom: 20px; }
+
+.Company_Cores-Mobile-Number {
+  font-size: 50px;
+  transition: all 0.4s ease-in; }
+
+.Company_Cores-Mobile-Sections-Wrap {
+  width: 100%; }
+
+.Company_Cores-Mobile-Section {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px; }
+
+.Company_Cores-Mobile-Section:last-child {
+  margin-bottom: 0; }
+
+.Company_Cores-Mobile-Number-Wrap {
+  padding-right: 20px; }
+
+.Company_Cores-Mobile-Title-Wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.Company_Cores-Mobile-Section-Title {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 30px;
+  transition: all 0.4s ease-in; }
+
+.Company_Cores-Mobile-Section-SubTitle {
+  font-size: 18px;
+  line-height: 42px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  color: #393939;
+  transition: all 0.4s ease-in; }
+
+.Company_Cores-Mobile-Section-Text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 46px;
+  color: #898989;
+  transition: all 0.4s ease-in; }
+
+@media screen and (max-height: 700px) {
+  .Company_Cores {
+    margin-top: 150px; }
+  .Company_Cores-Main-Number {
+    font-size: 80px; }
+  .Company_Cores-Main-Section-Title {
+    font-size: 32px;
+    margin-top: 15px; }
+  .Company_Cores-Main-Section-SubTitle {
+    font-size: 24px;
+    line-height: 32px; }
+  .Company_Cores-Main-Section-Text {
+    font-size: 16px; }
+  .Company_Cores-Mobile-Number {
+    font-size: 32px; }
+  .Company_Cores-Mobile-Section-Title {
+    font-size: 28px; }
+  .Company_Cores-Mobile-Section-SubTitle {
+    font-size: 18px;
+    line-height: 28px; }
+  .Company_Cores-Mobile-Section-Text {
+    line-height: 28px; } }
+
+@media screen and (max-width: 900px) {
+  .Company_Cores-Main-Number {
+    font-size: 60px; }
+  .Company_Cores-Main-Section-Title {
+    margin-top: 10px;
+    font-size: 28px; } }
+
+@media screen and (max-width: 700px) {
+  .Company_Cores {
+    margin-top: 150px; }
+  .Company_Cores-Main {
+    display: none; }
+  .Company_Cores-Mobile {
+    display: block; } }
+
+@media screen and (max-width: 500px) {
+  .Company_Cores-Mobile-Number {
+    font-size: 28px; }
+  .Company_Cores-Mobile-Section-Title {
+    font-size: 24px; }
+  .Company_Cores-Mobile-Section-SubTitle {
+    font-size: 16px;
+    line-height: 28px; }
+  .Company_Cores-Mobile-Section-Text {
+    line-height: 28px; } }
+
+
+/*# sourceMappingURL=/Company.019d0719.css.map */
