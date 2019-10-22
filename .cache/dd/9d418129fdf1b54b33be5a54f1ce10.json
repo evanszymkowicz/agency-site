@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"id":"assets/ArrowRight.svg","dependencies":[{"name":"/Users/evanwolfszy/Projects/2019/marketing-site/package.json","includedInParent":true,"mtime":1571763640095}],"generated":{"js":"module.exports = \"/de4b54f28dd05c9e214d2a920386ca68.svg\";"},"sourceMaps":null,"error":null,"hash":"bac70feedd82c00bcddafb3e7bda494a","cacheData":{"env":{}}}
+=======
+{"id":"assets/ArrowRight.svg","dependencies":[{"name":"/Users/evanwolfszy/Projects/2019/marketing-site/package.json","includedInParent":true,"mtime":1571701259240}],"generated":{"js":"module.exports = \"/de4b54f28dd05c9e214d2a920386ca68.svg\";"},"sourceMaps":null,"error":null,"hash":"e9b37a8192a0a7398d5eaea5230fb47a","cacheData":{"env":{}}}
+>>>>>>> 1d58e69547c77b51eb4157553f05b8789e7de4f2

@@ -1,1 +1,1 @@
-import CompanyAnimations from './Animations/CompanyAnimations';
+import PhilAnimations from './Animations/CompanyAnimations';

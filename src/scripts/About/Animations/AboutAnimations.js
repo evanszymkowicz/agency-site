@@ -7,18 +7,37 @@ import {
   const AboutIntroText = document.getElementById('AboutIntro_Text');
   const AboutIntroCTA = document.getElementById('AboutIntro_CTA');
   const AboutGif = document.getElementById('AboutGif');
-  const AboutIntroTl = new TimelineMax();
-  AboutIntroTl
-    .add('wave1')
-    .set(AboutHeader, { y: 50 }, 'wave1')
-    .set(AboutIntroText, { y: 50 }, 'wave1')
-    .set(AboutIntroCTA, { y: 50 }, 'wave1')
-    .set(AboutGif, { y: 50 }, 'wave1')
 
+  const AboutIntroTl = new TimelineMax();
+  AboutIntroTl.add('wave1').set(AboutHeader, {
+    y: 50,
+  }, 'wave1').set(AboutIntroText, {
+    y: 50,
+  }, 'wave1').set(AboutIntroCTA, {
+    y: 50,
+  }, 'wave1')
+    .set(AboutGif, {
+      y: 50,
+    }, 'wave1')
     .to(AboutHeader, 0.6, {
-      opacity: 1, y: 0, ease: Power1.easeInOut, delay: 0.5,
+      opacity: 1,
+      y: 0,
+      ease: Power1.easeInOut,
+      delay: 0.5,
     })
-    .to(AboutIntroText, 0.6, { opacity: 1, y: 0, ease: Power1.easeInOut }, '-=.4')
-    .to(AboutIntroCTA, 0.6, { opacity: 1, y: 0, ease: Power1.easeInOut }, '-=.5')
-    .to(AboutGif, 0.6, { opacity: 1, y: 0, ease: Power1.easeInOut }, '-=.5');
+    .to(AboutIntroText, 0.6, {
+      opacity: 1,
+      y: 0,
+      ease: Power1.easeInOut,
+    }, '-=.4')
+    .to(AboutIntroCTA, 0.6, {
+      opacity: 1,
+      y: 0,
+      ease: Power1.easeInOut,
+    }, '-=.5')
+    .to(AboutGif, 0.6, {
+      opacity: 1,
+      y: 0,
+      ease: Power1.easeInOut,
+    }, '-=.5');
 }());
