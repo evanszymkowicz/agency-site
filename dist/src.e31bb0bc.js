@@ -31726,10 +31726,15 @@ require("scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//Global Animations
 (function () {
+  //Variables ------
   var ConnectIcon = document.getElementById('Landing-Constants-ConnectIcon');
   var ConnectIconWhite = document.getElementById('ConnectIconWhite');
-  var ConnectIconBlue = document.getElementById('ConnectIconBlue');
+  var ConnectIconBlue = document.getElementById('ConnectIconBlue'); //Variables ------
+  //Pure GSAP -------- ------- ----- ---- --- -- -
+  //ConnectIcon ------
+
   var ConnectIconTl = new _all.TimelineMax();
   ConnectIconTl.add('IconChange').set(ConnectIcon, {
     className: '+=ConnectIconBG'
@@ -31738,47 +31743,57 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   }, 'IconChange').set(ConnectIconBlue, {
     display: 'block'
   }, 'IconChange');
-  ConnectIconTl.pause(); // ActivateConnectIconChange
+  ConnectIconTl.pause(); //ActivateConnectIconChange
 
   var ConnectIconActive = function ConnectIconActive(e) {
     ConnectIconTl.play();
-  }; // DeactivateConnectIconChange
+  }; //DeactivateConnectIconChange
 
 
   var ConnectIconInactive = function ConnectIconInactive(e) {
     ConnectIconTl.reverse();
-  };
+  }; //Event Listeners
+
 
   ConnectIcon.addEventListener('mouseover', ConnectIconActive);
-  ConnectIcon.addEventListener('mouseout', ConnectIconInactive);
-  var controller = new _scrollmagic.default.Controller();
+  ConnectIcon.addEventListener('mouseout', ConnectIconInactive); //ScrollMagic -------- ------- ----- ---- --- -- -
+
+  var controller = new _scrollmagic.default.Controller(); //Scenes --------------
+  //Footer -------
 
   (function () {
+    //Background
     var FooterBackgroundScene = new _scrollmagic.default.Scene({
       triggerElement: '#Footer',
-      triggerHook: 0.68
-    }).setClassToggle('#Footer_Background', 'Slide-Up').addTo(controller);
+      // reverse: false,
+      triggerHook: .68
+    }).setClassToggle('#Footer_Background', 'Slide-Up').addTo(controller); //White Text
+
     var FooterWhiteTextScene = new _scrollmagic.default.Scene({
       triggerElement: '#Footer',
-      triggerHook: 0.65
+      // reverse: false,
+      triggerHook: .65
     }).setClassToggle('#Footer_Content-White', 'Fade-In').addTo(controller);
   })();
 })();
-},{"jquery":"../node_modules/jquery/dist/jquery.js","gsap/all":"../node_modules/gsap/all.js","scrollmagic":"../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap":"../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js","scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators":"../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"}],"scripts/MobileNavigation/MobileNavigation.js":[function(require,module,exports) {
+},{"jquery":"../node_modules/jquery/dist/jquery.js","gsap/all":"../node_modules/gsap/all.js","scrollmagic":"../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap":"../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js","scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators":"../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"}],"scripts/mobileNav/mobileNav.js":[function(require,module,exports) {
 "use strict";
 
 var _TimelineMax = _interopRequireDefault(require("gsap/TimelineMax"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+//Wrapper
 (function () {
+  //Variables
   var MobileHeader = document.getElementById('MobileHeader');
-  var MobileMenu = document.getElementById('MobileNavigation');
-  var MobileListItems = document.querySelectorAll('.MobileNavigation_ListItem');
+  var MobileMenu = document.getElementById('MobileNav');
+  var MobileListItems = document.querySelectorAll('.MobileNav_ListItem');
   var MobileMenuIcon = document.getElementById('MobileMenuIcon');
-  var MobileMenuClose = document.getElementById('MobileMenuClose');
-  var ToggleMobileNavigationTl = new _TimelineMax.default();
-  ToggleMobileNavigationTl.add('wave1').set(MobileMenu, {
+  var MobileMenuClose = document.getElementById('MobileMenuClose'); //Timeline
+
+  var ToggleMobileNavTl = new _TimelineMax.default();
+  ToggleMobileNavTl.add('wave1').set(MobileMenu, {
     display: 'block',
     opacity: 0
   }, 'wave1').set(MobileHeader, {
@@ -31793,37 +31808,38 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   }, {
     opacity: 1,
     ease: Expo.easeInOut
-  }, 'wave2').staggerFrom(MobileListItems, 0.3, {
+  }, 'wave2').staggerFrom(MobileListItems, .3, {
     opacity: 0,
     x: -400,
     ease: Expo.easeInOut,
-    delay: 0.2
-  }, 0.1, 'wave2');
-  ToggleMobileNavigationTl.pause();
+    delay: .2
+  }, .1, 'wave2');
+  ToggleMobileNavTl.pause(); //Functions
 
-  var ToggleMobileNavigation = function ToggleMobileNavigation(e) {
+  var ToggleMobileNav = function ToggleMobileNav(e) {
     console.log('Click');
-    ToggleMobileNavigationTl.play();
+    ToggleMobileNavTl.play();
   };
 
-  var CloseMobileNavigation = function CloseMobileNavigation(e) {
-    ToggleMobileNavigationTl.reverse();
-  };
+  var CloseMobileNav = function CloseMobileNav(e) {
+    ToggleMobileNavTl.reverse();
+  }; //Listeners
 
-  MobileMenuIcon.addEventListener('click', ToggleMobileNavigation);
-  MobileMenuClose.addEventListener('click', CloseMobileNavigation);
+
+  MobileMenuIcon.addEventListener('click', ToggleMobileNav);
+  MobileMenuClose.addEventListener('click', CloseMobileNav);
 })();
 },{"gsap/TimelineMax":"../node_modules/gsap/TimelineMax.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _MainAnimations = _interopRequireDefault(require("./scripts/Global/Animations/MainAnimations"));
 
-var _MobileNavigation = _interopRequireDefault(require("./scripts/MobileNavigation/MobileNavigation"));
+var _mobileNav = _interopRequireDefault(require("./scripts/mobileNav/mobileNav"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 console.log(window.pageYOffset);
-},{"./scripts/Global/Animations/MainAnimations":"scripts/Global/Animations/MainAnimations.js","./scripts/MobileNavigation/MobileNavigation":"scripts/MobileNavigation/MobileNavigation.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./scripts/Global/Animations/MainAnimations":"scripts/Global/Animations/MainAnimations.js","./scripts/mobileNav/mobileNav":"scripts/mobileNav/mobileNav.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -31851,7 +31867,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53017" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54138" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

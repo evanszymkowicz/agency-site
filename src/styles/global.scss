@@ -9,8 +9,8 @@
 body,
 html {
   width: 100%;
-  font-family: 'montserrat', sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Jomolhari', serif;
+  background-color: #F6F5F5;
   color: #141414;
   position: relative;
   display: flex;
@@ -52,7 +52,7 @@ ul {
   color: #C45527;
 }
 
-.Color-Blue {
+.Color-Orange {
   color: #C45527;
   font-family: vox, sans-serif;
   font-weight: 700;
@@ -127,22 +127,22 @@ ul {
   justify-content: space-between;
 }
 
-.NavLink {
+.Nav_Link {
   font-size: 20px;
   margin-right: 55px;
   font-weight: 500;
   transition: color 0.3s ease-in;
 }
 
-.NavLink:last-child {
+.Nav_Link:last-child {
   margin: 0;
 }
 
-.NavLink:hover {
+.Nav_Link:hover {
   color: #C45527;
 }
 
-.NavLink-ActivePage {
+.Nav_Link-ActivePage {
   color: #C45527;
 }
 
@@ -188,7 +188,7 @@ ul {
     font-size: 20px;
   }
 
-  .NavLink {
+  .Nav_Link {
     font-size: 16px;
   }
 }
@@ -230,7 +230,7 @@ ul {
   transition: all 0.3s ease-in;
 }
 
-.MobileNavLinks {
+.MobileNav_Links {
   display: flex;
   flex-direction: column;
 }
@@ -239,14 +239,14 @@ ul {
   margin-bottom: 25px;
 }
 
-.MobileNavLink {
+.MobileNav_link {
   font-size: 60px;
   font-weight: 900;
   color: #FFF;
   transition: font-size 0.3s ease-in;
 }
 
-.MobileNavLink:last-child {
+.MobileNav_link:last-child {
   margin-bottom: 0;
 }
 @media screen and (max-width: 700px) {
@@ -259,7 +259,7 @@ ul {
     padding-top: 60px;
   }
 
-  .MobileNavLink {
+  .MobileNav_link {
     font-size: 50px;
   }
 }
@@ -268,7 +268,7 @@ ul {
     padding-top: 60px;
   }
 
-  .MobileNavLink {
+  .MobileNav_link {
     font-size: 40px;
   }
 }
@@ -277,7 +277,7 @@ ul {
     padding-top: 100px;
   }
 
-  .MobileNavLink {
+  .MobileNav_link {
     font-size: 32px;
   }
 }
@@ -686,7 +686,7 @@ ul {
 .Social1 {
   margin-bottom: 20px;
 }
-//Center Logo
+
 .Constants-Logo {
   font-size: 60px;
   font-family: uppercut-angle, sans-serif;
@@ -756,7 +756,7 @@ ul {
     font-size: 32px;
   }
 }
-//TEMP OTHER PAGES
+
 .Temp--Content-Wrap {
   margin: 0;
   padding: 0;

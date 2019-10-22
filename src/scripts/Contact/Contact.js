@@ -1,1 +1,1 @@
-import ContactAnimations from './Animations/ContactAnimations';
+import ContactAnimations from'./Animations/ContactAnimations';
