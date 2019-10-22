@@ -1,7 +1,7 @@
 import { TimelineMax } from 'gsap/TimelineMax';
 
 (function () {
-  const LandingHeader = document.getElementById('Landing_Header');
+  const LandingHeader = document.getElementById('LandingHeader');
   const HideLandingHeaderTl = new TimelineMax();
   HideLandingHeaderTl
     .set(LandingHeader, { top: 0 })

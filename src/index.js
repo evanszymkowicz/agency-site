@@ -1,4 +1,4 @@
-import MainAnimations from './Scripts/Global/Animations/MainAnimations';
-import MobileNavigation from './Scripts/MobileNavigation/MobileNavigation';
+import MainAnimations from './scripts/Global/Animations/MainAnimations';
+import MobileNavigation from './scripts/MobileNavigation/MobileNavigation';
 
-// console.log(window.pageYOffset);
+console.log(window.pageYOffset);

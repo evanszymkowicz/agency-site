@@ -31711,7 +31711,7 @@ var define;
     }
   };
 });
-},{"scrollmagic":"../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"}],"Scripts/Global/Animations/MainAnimations.js":[function(require,module,exports) {
+},{"scrollmagic":"../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js"}],"scripts/Global/Animations/MainAnimations.js":[function(require,module,exports) {
 "use strict";
 
 var _jquery = _interopRequireDefault(require("jquery"));
@@ -31764,7 +31764,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     }).setClassToggle('#Footer_Content-White', 'Fade-In').addTo(controller);
   })();
 })();
-},{"jquery":"../node_modules/jquery/dist/jquery.js","gsap/all":"../node_modules/gsap/all.js","scrollmagic":"../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap":"../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js","scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators":"../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"}],"Scripts/MobileNavigation/MobileNavigation.js":[function(require,module,exports) {
+},{"jquery":"../node_modules/jquery/dist/jquery.js","gsap/all":"../node_modules/gsap/all.js","scrollmagic":"../node_modules/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js","scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap":"../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js","scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators":"../node_modules/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js"}],"scripts/MobileNavigation/MobileNavigation.js":[function(require,module,exports) {
 "use strict";
 
 var _TimelineMax = _interopRequireDefault(require("gsap/TimelineMax"));
@@ -31816,12 +31816,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 },{"gsap/TimelineMax":"../node_modules/gsap/TimelineMax.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
-var _MainAnimations = _interopRequireDefault(require("./Scripts/Global/Animations/MainAnimations"));
+var _MainAnimations = _interopRequireDefault(require("./scripts/Global/Animations/MainAnimations"));
 
-var _MobileNavigation = _interopRequireDefault(require("./Scripts/MobileNavigation/MobileNavigation"));
+var _MobileNavigation = _interopRequireDefault(require("./scripts/MobileNavigation/MobileNavigation"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-},{"./Scripts/Global/Animations/MainAnimations":"Scripts/Global/Animations/MainAnimations.js","./Scripts/MobileNavigation/MobileNavigation":"Scripts/MobileNavigation/MobileNavigation.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+console.log(window.pageYOffset);
+},{"./scripts/Global/Animations/MainAnimations":"scripts/Global/Animations/MainAnimations.js","./scripts/MobileNavigation/MobileNavigation":"scripts/MobileNavigation/MobileNavigation.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -31849,7 +31851,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50258" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53017" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

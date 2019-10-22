@@ -108,19 +108,19 @@ ul {
   align-items: center;
   justify-content: space-between; }
 
-.Nav_Link {
+.NavLink {
   font-size: 20px;
   margin-right: 55px;
   font-weight: 500;
   transition: color 0.3s ease-in; }
 
-.Nav_Link:last-child {
+.NavLink:last-child {
   margin: 0; }
 
-.Nav_Link:hover {
+.NavLink:hover {
   color: #C45527; }
 
-.Nav_Link-ActivePage {
+.NavLink-ActivePage {
   color: #C45527; }
 
 .MobileMenuIcon {
@@ -157,7 +157,7 @@ ul {
     height: 120px; }
   .SiteLogo {
     font-size: 20px; }
-  .Nav_Link {
+  .NavLink {
     font-size: 16px; } }
 
 @media screen and (max-width: 1100px) {
@@ -191,20 +191,20 @@ ul {
   align-items: center;
   transition: all 0.3s ease-in; }
 
-.MobileNav_Links {
+.MobileNavLinks {
   display: flex;
   flex-direction: column; }
 
 .MobileNav_ListItem {
   margin-bottom: 25px; }
 
-.MobileNav_link {
+.MobileNavLink {
   font-size: 60px;
   font-weight: 900;
   color: #FFF;
   transition: font-size 0.3s ease-in; }
 
-.MobileNav_link:last-child {
+.MobileNavLink:last-child {
   margin-bottom: 0; }
 
 @media screen and (max-width: 700px) {
@@ -214,19 +214,19 @@ ul {
 @media screen and (max-width: 500px) {
   .MobileNav_Wrap {
     padding-top: 60px; }
-  .MobileNav_link {
+  .MobileNavLink {
     font-size: 50px; } }
 
 @media screen and (max-height: 700px) {
   .MobileNav_Wrap {
     padding-top: 60px; }
-  .MobileNav_link {
+  .MobileNavLink {
     font-size: 40px; } }
 
 @media screen and (max-height: 500px) {
   .MobileNav_Wrap {
     padding-top: 100px; }
-  .MobileNav_link {
+  .MobileNavLink {
     font-size: 32px; } }
 
 .Footer {
