@@ -1,0 +1,65 @@
+.Color-White {
+  color: #FFF; }
+
+.Background-Color-White {
+  background-color: #FFF; }
+
+.Portfolio-Color {
+  background-color: #444444; }
+
+.Color-Grey {
+  color: #5e5e5e; }
+
+.Portfolio_Intro {
+  width: 100%;
+  margin-top: 160px;
+  margin-bottom: 100px; }
+
+.Portfolio_Intro-Wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; }
+
+.Portfolio_Intro-Header {
+  width: 50%;
+  color: #FFF;
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: -3px;
+  opacity: 0;
+  transition: all 0.6s ease-in; }
+
+.Portfolio_Intro-Right {
+  width: 50%;
+  padding-left: 20px;
+  margin-top: 120px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 46px;
+  opacity: 0;
+  color: #c1c1c1;
+  transition: all 0.6s ease-in; }
+
+@media screen and (max-height: 700px) {
+  .Portfolio_Intro {
+    margin-top: 80px; }
+  .Portfolio_Intro-Right {
+    font-size: 18px; } }
+
+@media screen and (max-width: 1100px) {
+  .Portfolio_Intro-Wrap {
+    display: block; }
+  .Portfolio_Intro-Header {
+    width: 100%; }
+  .Portfolio_Intro-Right {
+    width: 100%;
+    margin-top: 60px; } }
+
+@media screen and (max-width: 900px) {
+  .Portfolio_Intro-Header {
+    font-size: 50px; }
+  .Portfolio_Intro-Right {
+    font-size: 16px; } }
+
+
+/*# sourceMappingURL=/portfolio.258aac3b.css.map */
