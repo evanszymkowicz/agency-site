@@ -173,8 +173,7 @@
 }
 .Landing_Clients {
   width: 100%;
-  margin: 130px 0;
-  margin-bottom: 60px;
+  margin: 130px 0 60px;
   transition: opacity 0.4s ease-in;
 }
 
@@ -255,7 +254,7 @@
 
 @media screen and (max-width: 1100px) {
   .Landing_Clients {
-    margin: 80px 0px;
+    margin: 80px 0;
   }
 
   .Landing_Clients-ImageWrap {
@@ -288,8 +287,7 @@
 }
 .Landing_CaseStudies {
   width: 100%;
-  margin: 130px 0;
-  margin-bottom: 60px;
+  margin: 130px 0 60px;
 }
 
 .Landing_CaseStudies-Wrap {
@@ -446,7 +444,7 @@
 
 .Shrink-Landing-Phone {
   width: 400px;
-  top: 0px;
+  top: 0;
 }
 
 @media screen and (max-width: 1600px) {
@@ -562,12 +560,12 @@
 }
 @media screen and (max-width: 550px) {
   .Landing_CaseStudies-Title {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .Landing_CaseStudy-Project {
     height: 120vw;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .Landing_CaseStudy-Description {
@@ -700,7 +698,7 @@
   }
 
   .Landing_Services-IntroRight {
-    padding-left: 0px;
+    padding-left: 0;
   }
 
   .Landing_Services-BreakDown {
@@ -709,7 +707,7 @@
 }
 @media screen and (max-height: 700px) {
   .Landing_Services-BreakDown {
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 1100px) {

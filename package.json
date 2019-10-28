@@ -4,7 +4,7 @@
   "description": "New site for a Digital Shop in D.C.",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/index.html",
+    "dev": "parcel src/index.html",
     "build": "parcel build src/index.html"
   },
   "engines": {
@@ -27,13 +27,13 @@
   "dependencies": {
     "gsap": "^2.1.3",
     "jquery": "^3.4.1",
-    "parcel-bundler": "^1.12.4",
     "sass": "^1.23.0",
     "scrollmagic": "^2.0.7"
   },
   "devDependencies": {
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2"
+    "eslint-plugin-import": "^2.18.2",
+    "parcel-bundler": "^1.12.4"
   }
 }
